@@ -1,4 +1,4 @@
-(*[1;2;4;6;7;7;7;9;9;13;13;14;15]*)
+(*[1;2;4;6;7;7;7;9;9;13;13;14;15]*) 
 let rec count (xs:int list) (x:int) =
     match xs with
         | h::t when h=x -> 1 + count t x
