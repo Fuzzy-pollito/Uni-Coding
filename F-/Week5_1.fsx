@@ -36,9 +36,9 @@ Triangle(4,3,2);;
 
 let area (shape: Shape) = function
     | Circle(r:float) -> System.Math.PI*r**2
-    | Square(l:float) ->4*l
+    | Square(l:float) ->4.0*l
     | Triangle(b:float,h:float,w:float) ->
-        let (s:float) = (b+h+w)/2
+        let (s:float) = (b+h+w)/2.0
         System.Math.Sqrt(s*w+s*h+s*b);;
 
 
